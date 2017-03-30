@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Brian</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css"  href="main.css" >
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+  </style>
+  <script src="script.js"></script>
+</head>
+
+<body id="contact_bod">
+
+<!--HEADER AND NAV--->
+<header>
+    <a href="index.html"><h1>Brian Barnes</h1></a>
+
+    <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!--START OF MAIN CONTENT - CONTACT PAGE--->
+
+
+<!--CONTACT FORM--->
+
+<div class="half_wrap">
+  <fieldset>
+
+    <!--I read that the mailto: action isn't compatible across browsers
+    but put it as a placeholder for the Deliverable.-->
+    <form action="mailto:?#?@?%#.com" method="post" name="contactForm">
+      <legend>Send me a message</legend><br /><br />
+
+      <label for="email"> Your email address: </label><br />
+      <input type="email" name="email" /><br /><br />
+
+      <label for="subject">Subject:</label> <br />
+      <input type="text" name="subject" size="20" maxlength="30" /> <br />
+
+      <p id="contact_p"> Your message: </p>
+      <textarea name="message" cols="40" rows="10"></textarea><br />
+
+      <input id="submit" type="submit" value="SEND IT!" />
+    </form>
+
+  </fieldset>
+</div>
+
+<!--JAVASCRIPT MESSAGE AREA--->
+
+<div class="half_wrap">
+    <button onclick="briSaysHello()" style="display: block; margin: 0 auto;">Click me</button>
+
+    <div id="jsmessage" style="margin: 0 auto;">
+      <p id="message"></p>
+    </div>
+</div>
+
+
+</body>
+
+</html>
